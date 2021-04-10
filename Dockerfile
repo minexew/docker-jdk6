@@ -18,4 +18,4 @@ RUN update-alternatives --install /usr/bin/javah javah /usr/lib/jvm/jdk1.6.0_45/
 RUN update-alternatives --install /usr/bin/javaws javaws /usr/lib/jvm/jdk1.6.0_45/bin/javaws 1
 RUN update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk1.6.0_45/bin/jar 1
 
-RUN java -version 2>&1 | grep 'javac 1.6.0_45'
+RUN java -version 2>&1 | grep 'java version 1.6.0_45'
