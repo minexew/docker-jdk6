@@ -12,10 +12,10 @@ RUN curl -LO https://archive.org/download/jdk-6u45/jdk-6u45-linux-i586.bin \
     && mv jdk1.6.0_45 /usr/lib/jvm/ \
     && rm jdk-6u45-linux-i586.bin
 
-RUN update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.6.0_45_x86/bin/java 1
-RUN update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk1.6.0_45_x86/bin/javac 1
-RUN update-alternatives --install /usr/bin/javah javah /usr/lib/jvm/jdk1.6.0_45_x86/bin/javah 1
-RUN update-alternatives --install /usr/bin/javaws javaws /usr/lib/jvm/jdk1.6.0_45_x86/bin/javaws 1
-RUN update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk1.6.0_45_x86/bin/jar 1
+RUN update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.6.0_45/bin/java 1
+RUN update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk1.6.0_45/bin/javac 1
+RUN update-alternatives --install /usr/bin/javah javah /usr/lib/jvm/jdk1.6.0_45/bin/javah 1
+RUN update-alternatives --install /usr/bin/javaws javaws /usr/lib/jvm/jdk1.6.0_45/bin/javaws 1
+RUN update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk1.6.0_45/bin/jar 1
 
 RUN java -version 2>&1 | grep 'javac 1.6.0_45'
